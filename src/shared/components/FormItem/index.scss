@@ -1,0 +1,55 @@
+.form__item {
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.form__label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-size: 12px;
+  align-items: center;
+
+  &-title:not(:last-child) {
+    margin-right: 5px;
+  }
+}
+
+.form__error {
+  color: red;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.form__input {
+  display: block;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid gray;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.form__radio {
+  display: flex;
+  gap: 8px;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.form__text-box {
+  outline: none;
+  border: 1px solid gray;
+  padding: 10px;
+  margin-bottom: 10px;
+}

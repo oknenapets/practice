@@ -1,0 +1,32 @@
+@import './../../assets/stylesheets/mixins.scss';
+
+.page__login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  @include centerer;
+
+  &-link {
+    font-size: 14px;
+    color: white;
+  }
+}
+
+.login-form {
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 30px;
+
+  &__link {
+    margin-bottom: 20px;
+    display: block;
+    color: black;
+  }
+}
+
+.no-margin {
+  margin: 0;
+}
