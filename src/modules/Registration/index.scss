@@ -1,0 +1,22 @@
+@import './../../assets/stylesheets/mixins.scss';
+
+.page__registration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  @include centerer;
+
+  &-link {
+    font-size: 14px;
+    color: white;
+  }
+}
+
+.registration__form {
+  width: 300px;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+}

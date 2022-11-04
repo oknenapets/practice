@@ -1,12 +1,17 @@
+import { ru } from 'date-fns/locale/';
 import React from 'react';
+import { registerLocale, setDefaultLocale } from 'react-datepicker';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Login } from './modules';
+import { Login, Registration } from './modules';
 import { ROUTES } from './shared/constants';
 import store from './store';
 
 import 'assets/stylesheets/styles.scss';
+
+registerLocale('ru', ru);
+setDefaultLocale('ru');
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,6 +20,7 @@ root.render(
       <BrowserRouter>
         <Routes>
           <Route path={ROUTES.login} element={<Login />} />
+          <Route path={ROUTES.registration} element={<Registration />} />
         </Routes>
       </BrowserRouter>
     </Provider>
