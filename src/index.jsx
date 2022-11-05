@@ -4,7 +4,8 @@ import { registerLocale, setDefaultLocale } from 'react-datepicker';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Login, Registration } from './modules';
+import { DefaultPage } from 'shared/layout';
+import { Login, Registration, NotFound } from './modules';
 import { ROUTES } from './shared/constants';
 import store from './store';
 
@@ -19,6 +20,9 @@ root.render(
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<DefaultPage />}>
+            <Route path="*" element={<NotFound />} />
+          </Route>
           <Route path={ROUTES.login} element={<Login />} />
           <Route path={ROUTES.registration} element={<Registration />} />
         </Routes>

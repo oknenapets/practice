@@ -10,7 +10,7 @@ import { getUsers } from 'store/User/selectors';
 
 import './index.scss';
 
-export const Login = () => {
+const Login = () => {
   const users = useSelector(getUsers);
   const dispatch = useDispatch();
   const navigate = useNavigate();

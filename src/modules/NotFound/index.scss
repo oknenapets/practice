@@ -1,0 +1,13 @@
+@import './../../assets/stylesheets/mixins.scss';
+
+.page__not-found {
+   @include centerer;
+   color: white;
+  .title {
+    text-align: center;
+    font-size: 120px;
+  }
+  .sub-title{
+    font-size: 60px;
+  }
+}

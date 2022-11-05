@@ -1,0 +1,14 @@
+.nav-menu {
+  &__link {
+    padding: 5px;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: white;
+
+    &:active,
+    &:hover {
+      color: black;
+      background-color: white;
+    }
+  }
+}
