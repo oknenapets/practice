@@ -4,13 +4,14 @@ import { registerLocale, setDefaultLocale } from 'react-datepicker';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { RequiredAuth } from 'shared/components';
 import { DefaultPage } from 'shared/layout';
-import { Login, NotFound, Registration, Profile } from './modules';
+import { Login, NotFound, Profile, Registration } from './modules';
 import { ROUTES } from './shared/constants';
 import store from './store';
 
-import 'assets/stylesheets/styles.scss';
 import 'assets/stylesheets/react-select.scss';
+import 'assets/stylesheets/styles.scss';
 
 registerLocale('ru', ru);
 setDefaultLocale('ru');
@@ -22,8 +23,10 @@ root.render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<DefaultPage />}>
-            <Route path={ROUTES.profile} element={<Profile />} />
-            <Route path="*" element={<NotFound />} />
+            <Route element={<RequiredAuth />}>
+              <Route path={ROUTES.profile} element={<Profile />} />
+              <Route path="*" element={<NotFound />} />
+            </Route>
           </Route>
           <Route path={ROUTES.login} element={<Login />} />
           <Route path={ROUTES.registration} element={<Registration />} />

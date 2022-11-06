@@ -4,3 +4,4 @@ export { default as Icon } from './Icon';
 export { default as NavBar } from './NavBar';
 export { default as Header } from './Header';
 export { default as CustomSelectOption } from './CustomSelectOption';
+export { default as RequiredAuth } from './RequiredAuth';
