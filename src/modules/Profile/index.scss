@@ -1,0 +1,14 @@
+@import './../../assets/stylesheets/mixins.scss';
+
+.profile {
+  &__form{
+    width: 300px;
+    padding: 40px;
+  }
+  &__body{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}
