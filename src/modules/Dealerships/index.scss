@@ -1,0 +1,27 @@
+.dealerships{
+  &__title{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  &__form{
+    width: 290px;
+  }
+  &__body{
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+  }
+  &__text{
+    font-size: 20px;
+  }
+  &__dealer-list{
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 1050px){
+  .dealerships__body {
+    flex-direction: column;
+  }
+}
