@@ -2,7 +2,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useSelector } from 'react-redux';
-import AppealFormScheme from 'services/Schemes';
+import { AppealFormScheme } from 'services/Schemes';
 import { Button, FormItem } from 'shared/components';
 import { getCurrentUser } from 'store/Auth/selectors';
 
