@@ -6,3 +6,4 @@ export { default as Header } from './Header';
 export { default as CustomSelectOption } from './CustomSelectOption';
 export { default as RequiredAuth } from './RequiredAuth';
 export { default as Modal } from './Modal';
+export { default as AppealForm } from './AppealForm';
