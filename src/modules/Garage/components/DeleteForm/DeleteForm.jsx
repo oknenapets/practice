@@ -1,8 +1,8 @@
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useForm } from 'react-hook-form';
-import { Button} from 'shared/components';
+import { Button } from 'shared/components';
 import PropTypes from 'prop-types';
-import DeleteFormSchema from 'services/Garage/DeleteFormSchema';
+import { DeleteFormSchema } from 'services/Schemes';
 
 const DeleteForm = ({ setActive, carId }) => {
   const {
@@ -19,10 +19,10 @@ const DeleteForm = ({ setActive, carId }) => {
     reset();
     setActive(false);
   };
-  
+
   return (
-    <form className='form' onSubmit={handleSubmit(onSubmit)}>
-      <div className='form__title'>Причина удаления</div>
+    <form className="form" onSubmit={handleSubmit(onSubmit)}>
+      <div className="form__title">Причина удаления</div>
       <p className="form__error">{errors?.reason && errors?.reason.message}</p>
       <div className="form__row">
         <input {...register('reason')} value="sale" className="form__radio-input" type="radio" id="sale" />
