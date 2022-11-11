@@ -5,3 +5,7 @@ export { default as CITIES } from './citiesRussia.json';
 export { default as CARS } from './dataCars.json';
 export { default as DEALERSHIPS } from './dealerships';
 export { default as CARS_STATE } from './carsState';
+export { default as WORK_SCHEDULE } from './workSchedule';
+export { default as APPLICATIONS_STATE } from './applicationsState';
+export { default as REASONS } from './reasonsVisit';
+export { default as CONSULTANTS } from './consultants';

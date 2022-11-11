@@ -4,3 +4,5 @@ export { default as ProfileSchema } from './Profile';
 export { default as AppealFormScheme } from './AppealForm';
 export { default as CarFormSchema } from './CarForm';
 export { default as DeleteFormSchema } from './DeleteForm';
+export { default as ApplicationFormSchema } from './ApplicationForm';
+export { default as CharacteristicsFormSchema } from './CharacteristicsForm';

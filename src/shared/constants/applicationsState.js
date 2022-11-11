@@ -1,0 +1,26 @@
+export default [
+  {
+    id: 1,
+    city: { value: 'Москва' },
+    car: { label: 'Mercedes-Benz G55 AMG', id: 1 },
+    reason: { label: 'Двигатель' },
+    dealer: { label: 'Центр Авто' },
+    consultant: { label: 'Петровская Валентина' },
+    date: '2022-08-24',
+    time: { label: '15-30 - 17-30' },
+    userId: 1,
+    status: { name: 'Принято к исполению', id: 1 },
+  },
+  {
+    id: 2,
+    city: { value: 'Москва' },
+    car: { label: 'Ferrari SF90 Stradale I', id: 2 },
+    reason: { label: 'Двигатель' },
+    dealer: { label: 'Центр Авто' },
+    consultant: { label: 'Волков Дмитрий' },
+    date: '2022-08-24',
+    time: { label: '15-30 - 17-30' },
+    userId: 2,
+    status: { name: 'Завершена', id: 4 },
+  },
+];
