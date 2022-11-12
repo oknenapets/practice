@@ -1,0 +1,11 @@
+.application__comment{
+  border: 1px solid black;
+}
+.application{
+  &__body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
