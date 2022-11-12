@@ -1,0 +1,40 @@
+.item{
+  &__actions{
+    display: flex;
+    gap: 10px;
+  }
+  .item__title{
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 643px){
+  .item__actions{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .item__action-btn{
+    padding: 15px;
+  }
+}
+
+.info{
+  &__title{
+    font-size: 18px;
+    padding: 20px 0px;
+  }
+  &__table{
+    border-collapse: collapse;
+    width: 100%;
+  }
+  &__row{
+    vertical-align: top;
+    border-bottom: 1px solid black;
+  }
+  &__data{
+    padding: 10px 5px;
+    text-align: left;
+  }
+}
