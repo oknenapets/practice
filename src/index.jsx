@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { RequiredAuth } from 'shared/components';
 import { DefaultPage } from 'shared/layout';
-import { Login, NotFound, Profile, Registration, Dealerships, Garage, CarInfo } from './modules';
+import { Login, NotFound, Profile, Registration, Dealerships, Garage, CarInfo, Service } from './modules';
 import { ROUTES } from './shared/constants';
 import store from './store';
 
@@ -28,6 +28,7 @@ root.render(
               <Route path={ROUTES.dealerships} element={<Dealerships />} />
               <Route path={ROUTES.garage} element={<Garage />} />
               <Route path={ROUTES.car} element={<CarInfo />} />
+              <Route path={ROUTES.service} element={<Service />} />
               <Route path="*" element={<NotFound />} />
             </Route>
           </Route>
